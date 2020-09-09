@@ -4,4 +4,6 @@ VALUES
 ('single'),
 ('double'),
 ('triple'),
+('truffle'),
+('barbeque'),
 ('impossible');
