@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/StevenSJones/NodeExpressHandlebarsEleventhEdition/issues"
   },
-  "homepage": "https://github.com/StevenSJones/NodeExpressHandlebarsEleventhEdition#readme"
+  "homepage": "https://github.com/StevenSJones/NodeExpressHandlebarsEleventhEdition#readme",
+  "dependencies": {
+    "express-handlebars": "^5.1.0"
+  }
 }
