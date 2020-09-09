@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/StevenSJones/NodeExpressHandlebarsEleventhEdition#readme",
   "dependencies": {
-    "express-handlebars": "^5.1.0"
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
   }
 }
