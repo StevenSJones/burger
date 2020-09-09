@@ -1,4 +1,3 @@
-# NodeExpressHandlebarsEleventhEdition
 # Node Express Handlebars
 
 ### Overview
