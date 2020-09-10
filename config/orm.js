@@ -12,17 +12,16 @@ const connection = require("connection");
 // Import MySQL connection. In this case iporting from the connection.js file
 //?? indicates a table OR columns and ? indicates a single point of data
 const orm = {
-    selectAll: function (tableInput, cb) {
-      const queryString = "SELECT * FROM ?? " + tableInput + ";";
-      connection.query(queryString, function (err, result) {
-        if (err) {
-          throw err;
-        }
-        cb(result);
-      });
-    }
-}
-
+  selectAll: function (tableInput, cb) {
+    const queryString = "SELECT * FROM ?? " + tableInput + ";";
+    connection.query(queryString, function (err, result) {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });
+  },
+};
 
 //    * Export the ORM object in `module.exports`.
 module.exports = connection;

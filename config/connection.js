@@ -13,15 +13,15 @@ const connection = mysql.createConnection({
   port: 3306,
   user: "root",
   password: "",
-  database: "pets_db"
+  database: "pets_db",
 });
 //Using the sql server (pressing the green call button)
-connection.connect(function(err) {
+connection.connect(function (err) {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
   }
   console.log("connected as id " + connection.threadId);
 });
-//exports the mysql server connection 
+//exports the mysql server connection
 module.exports = connection;
