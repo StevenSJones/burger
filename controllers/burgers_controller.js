@@ -1,10 +1,9 @@
-// 3. Inside the `burgers_controller.js` file, import the following:
-
 //    * Express
 //    * `burger.js`
 const express = require("express");
 // Import the model (`burger.js`) to use its database functions.
 const burger = require("../models/burger.js");
+// const { router } = require("express");
 
 // 4. Create the `router` for the app, and export the `router` at the end of your file.
 const router = express.Router();
@@ -12,7 +11,7 @@ const router = express.Router();
 router.get("/", function (req, res) {
   burger.selectAll(function (data) {
     var hbsObject = {
-      burger: data,
+      burgers: data,
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
@@ -20,7 +19,7 @@ router.get("/", function (req, res) {
 });
 //to add to the data
 router.post("/api/burgers", function (req, res) {
-  burger.create(["name", "hungry"], [req.body.name, req.body.hungry], function (
+  burger.create(["burger", "devoured"], [req.body.burger, req.body.devoured], function (
     result
   ) {
     // Send back the ID of the new quote
@@ -29,13 +28,13 @@ router.post("/api/burgers", function (req, res) {
 });
 //
 router.put("/api/burgers/:id", function (req, res) {
-  var condition = "id = " + req.params.id;
+  const condition = "id = " + req.params.id;
 
   console.log("condition", condition);
   //replace and add to the data
-  cat.update(
+  burger.update(
     {
-      hungry: req.body.hungry,
+      devoured: req.body.devoured,
     },
     condition,
     function (result) {
@@ -48,3 +47,5 @@ router.put("/api/burgers/:id", function (req, res) {
     }
   );
 });
+
+module.exports = router;
