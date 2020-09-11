@@ -1,5 +1,4 @@
 // #### Config Setup
-
 //import our npm packages
 const mysql = require("mysql");
 //this describes the connection to-be of the sql server(dialing the number to make the connection)
