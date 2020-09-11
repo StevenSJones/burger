@@ -21,6 +21,24 @@ const burger = {
     });
   },
 };
+submit.on(
+  "click",
+  function (event) {
+    event.preventDefault();
+    newBurger = $("#newBurger").val().trim();
+let id = $(this).data(burgerId);
+$.ajax("../models/burger.js", function(event) {
+  method: "POST",
+  data: newBurger
+}).then(function(){
+  console.log(newBurger)
+})
+  });
+
+  <div id="newBurger">
+    <input> Add new Burger </input>
+  </div>
+
 
 //     * Export at the end of the `burger.js` file.
 module.exports = burger;
