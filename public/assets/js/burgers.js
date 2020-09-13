@@ -15,7 +15,7 @@
 $(function() {
     $(".burger-status").on("click", function(event) {
       var id = $(this).data("id");
-      var toeat = $(this).data("toeat");
+      var toEat = $(this).data("toeat");
   
       var newEatState = {
         devoured: toEat
@@ -40,12 +40,12 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        nurger_name: $("#ca").val().trim(),
-        devoured: $("[burger_name=devoured]:checked").val().trim()
+        burger_name: $("#ca").val().trim(),
+        // devoured: $("[burger_name=devoured]:checked").val().trim(),
       };
   
-      // Send the POST request.
-      $.ajax("/api/cats", {
+      // Send the POST request which adds to something
+      $.ajax("/api/burgers", {
         type: "POST",
         data: newBurger
       }).then(
