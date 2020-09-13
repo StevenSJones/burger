@@ -2,8 +2,8 @@
 INSERT INTO burgers (burger_name, devoured) 
 VALUES 
 ('single', false),
-('double', true),
+('double', false),
 ('triple', false),
-('truffle', true),
+('truffle', false),
 ('barbeque', false),
-('impossible', true);
+('impossible', false);

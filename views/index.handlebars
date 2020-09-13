@@ -17,9 +17,9 @@
       <h2>Devoured Burgers</h2>
       <ul>
         {{#each burgers}}
-        {{#unless devoured}}
-        {{> burger-block devoured=false}}
-        {{/unless}}
+        {{#if devoured}}
+        {{> devoured-block}}
+        {{/if}}
         {{/each}}
       </ul>
     </div>
