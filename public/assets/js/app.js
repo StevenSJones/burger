@@ -6,6 +6,11 @@
 //     });
 //   });
 
+
+//next steps include refactoring the code below
+//next steps also include changing the index.handlebars file by removing the form and changing that to a list of the burgers and when one is clicked on; a picture that is a certain size appears on the right of the screen and then slides right to disappear.
+
+
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
     $(".change-sleep").on("click", function(event) {
