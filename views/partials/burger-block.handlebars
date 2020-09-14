@@ -2,20 +2,13 @@
 <li>
 	{{burger_name}}
 
-	<button class="burger-status" data-id="{{id}}" data-toeat="{{eat}}">
-		{{#if eat}}Devour!{{else}}Save It!{{/if}}
+	<button class="burger-status" data-id="{{id}}" data-toeat="{{save}}">
+		{{#if save}}Save it{{else}}Devour it!{{/if}}
 	</button>
-
-	{{!-- <button class="delete-cat" data-id="{{this.id}}">DELETE!</button> --}}
 </li>
 
 
 
 
 
-{{!-- <li>
-	{{burger_name}}
-	{{#unless devoured}}
-	<button class="btn btn-primary devour-burger" data-id="{{this.id}}">Devour Burger!</button>
-	{{/unless}}
-</li> --}}
+

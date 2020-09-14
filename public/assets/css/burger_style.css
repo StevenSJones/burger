@@ -11,6 +11,9 @@ body {
 }
 
 #devourIt {
+  background-color: blue;
+  font-family: 'Times New Roman', Times, serif;
+  color: black ;
 }
 
 #newBurger {
