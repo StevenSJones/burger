@@ -21,7 +21,7 @@ $(function() {
         devoured: 1
       };
   
-      // Send the PUT request.
+      // Send the PUT request to the server and the server sends something back, depending on what the server specifies.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: newEatState
