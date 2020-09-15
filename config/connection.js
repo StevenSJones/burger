@@ -3,11 +3,11 @@
 const mysql = require("mysql");
 //this describes the connection to-be of the sql server(dialing the number to make the connection)
 const connection = mysql.createConnection({
-  host: "localhost",
+  host: "z8dl7f9kwf2g82re.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
   port: 3306,
-  user: "root",
-  password: "",
-  database: "burgers_db",
+  user: "brwrjgjhbzfodk10	",
+  password: "tjuel8whugsp8ee9",
+  database: "fx5hsn54muq6i2o9",
 });
 //Using the sql server (pressing the green call button)
 connection.connect(function (err) {
