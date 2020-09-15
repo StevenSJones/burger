@@ -8,6 +8,7 @@ const connection = mysql.createConnection({
   user: "brwrjgjhbzfodk10	",
   password: "tjuel8whugsp8ee9",
   database: "fx5hsn54muq6i2o9",
+  socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock"
 });
 //Using the sql server (pressing the green call button)
 connection.connect(function (err) {
