@@ -2,7 +2,10 @@
 //import our npm packages
 const mysql = require("mysql");
 //this describes the connection to-be of the sql server(dialing the number to make the connection)
-const connection = mysql.createConnection({
+if(process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+connection = mysql.createConnection({
   host: "z8dl7f9kwf2g82re.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
   port: 3306,
   user: "brwrjgjhbzfodk10	",
@@ -10,6 +13,7 @@ const connection = mysql.createConnection({
   database: "fx5hsn54muq6i2o9",
   socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock"
 });
+};
 //Using the sql server (pressing the green call button)
 connection.connect(function (err) {
   if (err) {
