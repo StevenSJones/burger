@@ -1,8 +1,15 @@
 {{!-- if not devoured --}}
-<li>
+<li class="list-group-item d-flex justify-content-around">
 	{{burger_name}}
 
-	<button class="burger-status" data-id="{{id}}" data-toeat="{{save}}">
-		{{#if save}}Save it{{else}}Devour it!{{/if}}
+	{{#if save}}
+	<button class="btn btn-info burger-status" data-id="{{id}}" data-toeat="{{save}}">
+		Save It
 	</button>
+
+	{{else}}
+	<button class="btn btn-warning burger-status" data-id="{{id}}" data-toeat="{{save}}">
+		Devour It
+	</button>
+	{{/if}}
 </li>

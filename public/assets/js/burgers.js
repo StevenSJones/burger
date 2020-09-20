@@ -16,9 +16,10 @@ $(function() {
     $(".burger-status").on("click", function(event) {
       var id = $(this).data("id");
       var toEat = $(this).data("toeat");
-  
+
       var newEatState = {
-        devoured: 1
+        //if then else. If toEat is true then assign 0 else assign 1 (shortcut for if, then, else.)
+        devoured: toEat ? 0 : 1
       };
   
       // Send the PUT request to the server and the server sends something back, depending on what the server specifies.

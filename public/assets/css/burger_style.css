@@ -4,7 +4,25 @@ body {
   top: 15%;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+}
+hr {
+  color: black;
+  border-top: 2px dotted rgb(2, 19, 252);
+  width: 30%;
+}
+
+.jumbotron {
+  background-image: url(../img/single-burger.png);
+  background-size: contain;
+  background-repeat: round;
+  outline-width: 3px;
+  outline-style: double;
+  outline-color: rgb(2, 19, 252);
+}
+.jumbotron h1 {
+  color: azure;
+  box-shadow: 1px 1px 15px 10px  rgb(2, 19, 252);
+  text-shadow: 3px 3px  rgb(2, 19, 252);
 }
 
 #submit {
@@ -12,14 +30,14 @@ body {
 
 #devourIt {
   background-color: blue;
-  font-family: 'Times New Roman', Times, serif;
-  color: black ;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
 }
 
 #newBurger {
-   top: 40%;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-   font-family: 'Times New Roman', Times, serif;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
