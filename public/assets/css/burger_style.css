@@ -1,14 +1,24 @@
 body {
   font-family: sans-serif;
-  background-color: #1c7eac;
   top: 15%;
   margin-left: auto;
   margin-right: auto;
 }
 hr {
-  color: black;
-  border-top: 2px dotted rgb(2, 19, 252);
+  color: rgb(2, 19, 252);
   width: 30%;
+}
+q {
+  -webkit-text-stroke: 2px rgb(2, 19, 252);
+}
+footer {
+  box-shadow: 1px 1px 15px 10px rgb(2, 19, 252);
+}
+
+.footer {
+  background-image: url(../img/triple-burger.png);
+  background-size: contain;
+  background-repeat: round;
 }
 
 .jumbotron {
@@ -18,11 +28,13 @@ hr {
   outline-width: 3px;
   outline-style: double;
   outline-color: rgb(2, 19, 252);
+  box-shadow: 1px 1px 15px 10px rgb(2, 19, 252);
 }
 .jumbotron h1 {
+  font-size: 100px;
   color: azure;
-  box-shadow: 1px 1px 15px 10px  rgb(2, 19, 252);
-  text-shadow: 3px 3px  rgb(2, 19, 252);
+  box-shadow: 1px 1px 15px 10px rgb(2, 19, 252);
+  text-shadow: 3px 3px rgb(2, 19, 252);
 }
 
 #submit {
