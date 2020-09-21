@@ -5,7 +5,6 @@ body {
   margin-right: auto;
 }
 hr {
-  color: rgb(2, 19, 252);
   width: 30%;
 }
 q {
@@ -35,9 +34,6 @@ footer {
   color: azure;
   box-shadow: 1px 1px 15px 10px rgb(2, 19, 252);
   text-shadow: 3px 3px rgb(2, 19, 252);
-}
-
-#submit {
 }
 
 #devourIt {
