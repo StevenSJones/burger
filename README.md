@@ -16,7 +16,6 @@
 - [License](#License)
 - [Further Contact](#FurtherContact)
 ## Prerequisites:
-What things you need to install the software and how to install them: 
 > npm install node
 > npm install mysql
 > npm install express 
