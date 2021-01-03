@@ -18,10 +18,8 @@
 - [License](#License)
 - [Further Contact](#FurtherContact)
 ## Prerequisites:
-> npm install node
-> npm install mysql
-> npm install express 
-> npm install express-handlebars    
+> npm install node, npm install mysql, npm install express, npm install express-handlebars   
+> start script : node server.js 
 ## Tests:
 > None
 ## Contributing:
